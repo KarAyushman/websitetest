@@ -1,0 +1,139 @@
+.main{
+    height: 2000px;
+}
+
+.splash-container {
+    position: relative;
+    display:flex;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+
+.text-container{
+    position: absolute;
+}
+
+.splash-title {
+    top: 20%;
+    margin: 0px 50px 0px 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+
+.sp1{
+    margin: 10px 50px 0px 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+.sp2{
+    font-size: 20px;
+    margin: 10px 0px 0px 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.sp3{
+    font-size: 20px;
+    margin: 10px 0px 0px 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: aqua;
+}
+
+.splash-container img {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    bottom: 0;
+
+}
+
+.ib{
+    display: inline-block;
+}
+
+
+.splash-particles{
+    position: absolute;
+    display: relative;
+}
+
+#tsparticles{
+    position: fixed;
+    margin-top:60px;
+    padding-top: 60px;
+    z-index: -1;
+}
+
+
+
+
+.panel1{
+    background-color : #09091c;
+    height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: 1000;
+    align-items: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 1px 7px 2px rgba(0, 255, 255, 0.4);
+}
+
+.panel1{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.panel1 p{
+    opacity: 0.8;
+    font-size:32px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.panel1 img{
+    transform: scaleX(-1);
+}
+
+.info-title{
+    margin: 0px;
+    font-size: 60px;
+    color: #fff;
+}
+
+.dim{
+    opacity: 0.6;
+}
+
+.info-des{
+    color: whitesmoke;
+}
+
+.cy{
+    color: #00ffff !important;
+    opacity: 1;
+}
+
+.it{
+    font-style: italic !important;
+}
+
+.ul{
+    text-decoration: underline !important;
+}
+
+.rc1{
+    border-radius: 50px;
+}
+

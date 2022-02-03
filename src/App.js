@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/home';
+import About from './components/about';
+import Project from './components/project';
+import Navbar from './components/navbar/navbar';
+import React from 'react';
+import { AnimatePresence } from "framer-motion";
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <main>
+          <AnimatePresence>
+          <Navbar className="navbar"/>
+            <Routes>
+                <Route path="/" element={<Home/>} exact />
+                <Route path="/index.html" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/projects" element={<Project/>} />
+                <Route element={Error} />
+            </Routes>
+          </AnimatePresence>
+      </main>
+  )
 }
 
 export default App;
